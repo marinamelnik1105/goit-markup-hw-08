@@ -1,0 +1,32 @@
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+    min-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-boody);
+    color: var(--primari-text-color-teme-light);
+    font-weight: var(--normal-font-weding);
+
+}
+.item {
+    text-decoration: none;
+
+}

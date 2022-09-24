@@ -1,0 +1,43 @@
+.page-nav {
+    display: flex;
+    align-items: center;
+
+}
+
+.page-nav__list {
+    @extend %font;
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.page-nav__link {
+    position: relative;
+    color: var(--secondary-text-color-teme-light);
+    transition: color var(--transition-dur-and-func);
+    @extend %padding;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+
+
+
+.page-nav__list .item.page-nav__link--current {
+    color: var(--accent-color);
+}
+
+.page-nav__link--current::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    bottom: -8px;
+
+}

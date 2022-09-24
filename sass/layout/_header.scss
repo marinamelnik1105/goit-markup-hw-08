@@ -1,0 +1,24 @@
+.page-header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.page-header__logo {
+    margin-right: 93px;
+    @extend %padding;
+}
+
+
+.page-header__logo-top {
+    color: var(--color-logo-header);
+}
+
+
+
+.page-header__container {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+
+}
+
+
