@@ -20,8 +20,37 @@
   "editor.formatOnType": true,
   "files.autoSave": "afterDelay",
   "editor.renderWhitespace": "selection",
-  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrap": "bounded",
   "css.styleSheets": [
   
+  ],
+  "diffEditor.codeLens": true,
+  "html.format.wrapAttributes": "force",
+  "editor.guides.bracketPairs": true,
+  "editor.wrappingIndent": "indent",
+  "workbench.settings.useSplitJSON": true,
+  "json.schemas": [
+  
+  ],
+  "editor.wordWrapColumn": 150
+}
+{
+  "printWidth": 100,
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": true,
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "bracketSpacing": true,
+  "jsxBracketSameLine": false,
+  "arrowParens": "avoid",
+  "proseWrap": "always",
+  "overrides": [
+    {
+      "files": "*.css",
+      "options": {
+        "singleQuote": false
+      }
+    }
   ]
 }

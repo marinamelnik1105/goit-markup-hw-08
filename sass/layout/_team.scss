@@ -1,26 +1,25 @@
 .team {
     text-align: center;
-    background-color: #F5F5F5;
-
-}
-
-.team__list {
-    display: flex;
-
+    background-color: #F5F4FA;
 }
 
 .team__item {
-    width: calc((100% - 90px) / 4);
-    margin-right: 30px;
+    width: 100%;
+    height: calc((100% - 90px) / 4);
+    margin-bottom: 30px;
     background-color: #fff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
     &:nth-child(4n) {
-            margin-right: 0;
-        }
+        margin-bottom: 0;
+    }
 }
 
+.team__img {
+    height: 100%;
+    width: 100%;
+}
 
 .team__worker {
     margin-bottom: 10px;
@@ -28,6 +27,7 @@
     letter-spacing: $letter-spacing;
     color: var(--secondary-text-color-teme-light);
 }
+
 
 .team__jobs {
     font-size: 16px;
@@ -38,9 +38,91 @@
 
 .team__info {
     padding-top: 30px;
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-bottom: 30px;
-
+    padding-bottom: 24px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
+.team__info .social-list {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px)  {
+ 
+    .team__list {
+        display: flex;
+        flex-wrap: wrap;
+    }}
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    .team__item {
+        width: calc((100% - 30px) / 2);
+        margin-right: 30px;
+        margin-bottom: 30px;
+
+        &:nth-child(2n) {
+            margin-right: 0;
+            margin-bottom: 0;
+
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .team__item {
+        width: calc((100% - 90px) / 4);
+        margin-right: 30px;
+
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
+
+    }
+}
+
+
+
+    // .team {
+    //     text-align: center;
+    //     background-color: #F5F5F5;
+
+    // }
+
+    // .team__list {
+    //     display: flex;
+
+    // }
+
+    // .team__item {
+    //     width: calc((100% - 90px) / 4);
+    //     margin-right: 30px;
+    //     background-color: #fff;
+    //     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    //     border-radius: 0px 0px 4px 4px;
+
+    //     &:nth-child(4n) {
+    //             margin-right: 0;
+    //         }
+    // }
+
+
+    // .team__worker {
+    //     margin-bottom: 10px;
+    //     @include font(16px, 500, 1.18);
+    //     letter-spacing: $letter-spacing;
+    //     color: var(--secondary-text-color-teme-light);
+    // }
+
+    // .team__jobs {
+    //     font-size: 16px;
+    //     line-height: 1.18;
+    //     letter-spacing: $letter-spacing;
+    //     margin-bottom: 16px;
+    // }
+
+    // .team__info {
+    //     padding-top: 30px;
+    //     padding-right: 30px;
+    //     padding-left: 30px;
+    //     padding-bottom: 30px;
+
+    // }

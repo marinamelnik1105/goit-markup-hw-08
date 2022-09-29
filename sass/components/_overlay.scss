@@ -1,4 +1,8 @@
 .overlay {
+    display: none;
+}
+@media screen and (min-width: 768px){
+.overlay {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,10 +27,10 @@
     transform: translateY(100%);
     transition: transform var(--transition-dur-and-func);
 
-    .project-card-wrapper:hover &,
-    .project-card-wrapper:focus & {
+    .project__card-wrapper:hover &,
+    .project__card-wrapper:focus & {
         transform: translateY(0%);
     }
 
 
-}
+}}

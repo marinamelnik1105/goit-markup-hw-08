@@ -1,4 +1,15 @@
 .creation {
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    
+        
+    
+
+
+.creation {
+    display: block;
     padding-top: 0;
 }
 
@@ -38,4 +49,4 @@
     height: 70px;
 
 
-}
+}}

@@ -1,10 +1,13 @@
 .footer {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    text-align: center;
 }
+
 address {
     font-style: normal;
+}
+
+.footer__address {
+    margin-bottom: 60px;
 }
 
 .footer__theme {
@@ -38,7 +41,7 @@ address {
 }
 
 .footer__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 }
 
 
@@ -47,17 +50,8 @@ address {
 
 }
 
-
-
-
-.footer-form {
-    width: 570px;
-    height: 86px;
-}
-
-.form {
-    display: flex;
-    align-items: flex-end;
+.footer__social-list {
+    margin-bottom: 60px;
 }
 
 .form__text {
@@ -75,11 +69,11 @@ address {
 .form__input {
     font-size: 12px;
 
-    width: 358px;
+    width: 100%;
     height: 50px;
     padding-left: 16px;
     padding-right: 16px;
-    margin-right: 12px;
+    margin-bottom: 20px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -107,6 +101,9 @@ address {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+
     width: 200px;
     height: 50px;
 
@@ -131,3 +128,183 @@ address {
 .btn-form__icon {
     margin-left: 10px;
 }
+
+@media screen and (min-width: 768px) {
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-around;
+    }
+
+
+
+    .form__input {
+        width: 450px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer {
+        justify-content: space-between;
+    }
+
+    .footer__address {
+        margin-bottom: 0;
+    }
+
+    .footer__social-list {
+        margin-bottom: 0;
+    }
+
+    .footer-form {
+        width: 570px;
+        height: 86px;
+    }
+
+    .form {
+        display: flex;
+        align-items: flex-end;
+    }
+    .form__input{
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
+}
+}
+
+
+
+// .footer {
+//     display: flex;
+//     align-items: baseline;
+//     justify-content: space-between;
+// }
+// address {
+//     font-style: normal;
+// }
+
+// .footer__theme {
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+//     background-color: var(--fon-teme-dark);
+// }
+
+// .footer__logo {
+//     display: inline-block;
+//     margin-bottom: 20px;
+// }
+
+// .footer__logo-end {
+//     color: var(--color-logo-footer);
+// }
+
+
+// .footer__link {
+//     font-size: 14px;
+//     line-height: 1.71;
+//     letter-spacing: $letter-spacing;
+//     color: var(--secondary-text-color-teme-dark);
+//     transition: color var(--transition-dur-and-func);
+
+//     &:hover,
+//     &:focus {
+//         color: var(--accent-color);
+//     }
+
+// }
+
+// .footer__item:not(:last-child) {
+//     margin-bottom: 9px;
+// }
+
+
+// .footer__maps {
+//     color: var(--primari-text-color-teme-dark);
+
+// }
+
+
+
+
+// .footer-form {
+//     width: 570px;
+//     height: 86px;
+// }
+
+// .form {
+//     display: flex;
+//     align-items: flex-end;
+// }
+
+// .form__text {
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 16px;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     margin-bottom: 20px;
+
+//     color: var(--primari-text-color-teme-dark);
+// }
+
+
+// .form__input {
+//     font-size: 12px;
+
+//     width: 358px;
+//     height: 50px;
+//     padding-left: 16px;
+//     padding-right: 16px;
+//     margin-right: 12px;
+
+//     border: 1px solid rgba(255, 255, 255, 0.3);
+//     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+//     border-radius: 4px;
+//     background-color: transparent;
+//     color: var(--primari-text-color-teme-dark);
+//     transition: border-color var(--transition-dur-and-func);
+
+//     &:focus {
+//         outline: none;
+//         border-color: var(--accent-color);
+//     }
+
+//     &::placeholder {
+//         font-size: 16px;
+//         line-height: 1.25;
+//         color: rgba(255, 255, 255, 0.6);
+
+//     }
+
+// }
+
+
+// .btn-form {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 200px;
+//     height: 50px;
+
+//     background-color: var(--accent-color);
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//     border-radius: 4px;
+//     border-color: transparent;
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 1.88;
+//     cursor: pointer;
+//     color: #fff;
+//     transition: background-color var(--transition-dur-and-func);
+
+//     &:hover,
+//     &:focus {
+//         background-color: var(--color-btn-active);
+//     }
+// }
+
+
+// .btn-form__icon {
+//     margin-left: 10px;
+// }

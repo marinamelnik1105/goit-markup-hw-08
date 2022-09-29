@@ -2,36 +2,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 120px;
     background: #F5F4FA;
     border-radius: 4px;
+    height: 120px;
     margin-bottom: 30px;
 }
 
-
-
-
-.advantages__list {
-    display: flex;
-}
-
-.advantages__item {
-    width: calc((100% - 90px) / 4);
-    margin-right: 30px;
-
-    &:nth-child(4n) {
-        margin-right: 0;
-    }
-}
-
-
-
 .advantages__title {
+    text-align: center;
     margin-bottom: 10px;
     @include font (14px, 700, 1.14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--secondary-text-color-teme-light);
+
 
 }
 
@@ -39,4 +23,96 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+
 }
+
+@media screen and (max-width: 767px) {
+    .advantages__item {
+        margin-bottom: 30px;
+
+        &:nth-child(4n) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .advantages__title {
+        text-align: left;
+    }
+
+    .advantages__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .advantages__item {
+        width: calc((100% - 30px) / 2);
+        margin-right: 30px;
+        margin-bottom: 30px;
+
+        &:nth-child(2n) {
+            margin-right: 0;
+            margin-bottom: 0;
+
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .advantages__item {
+        width: calc((100% - 90px) / 4);
+        margin-right: 30px;
+
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
+    }
+}
+
+// .advantages__icon-bcg {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 120px;
+//     background: #F5F4FA;
+//     border-radius: 4px;
+//     margin-bottom: 30px;
+// }
+
+
+
+
+// .advantages__list {
+//     display: flex;
+// }
+
+// .advantages__item {
+//     width: calc((100% - 90px) / 4);
+//     margin-right: 30px;
+
+//     &:nth-child(4n) {
+//         margin-right: 0;
+//     }
+// }
+
+
+
+// .advantages__title {
+//     margin-bottom: 10px;
+//     @include font (14px, 700, 1.14);
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     color: var(--secondary-text-color-teme-light);
+
+// }
+
+// .advantages__text {
+//     font-size: 14px;
+//     line-height: 1.71;
+//     letter-spacing: 0.03em;
+// }
