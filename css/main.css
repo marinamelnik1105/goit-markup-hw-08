@@ -485,7 +485,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
+  min-width: 320px;
   padding: 40px;
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -493,6 +493,11 @@ body {
   transition: transform var(--transition-dur-and-func);
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
@@ -655,9 +660,8 @@ body {
 }
 
 .modal-form__field-desc-checkbox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
+  margin-left: 22px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
