@@ -1,21 +1,21 @@
-.mobile-nav {
-    padding-top: 48px;
-    
-    
-
-}
-
 .mobile-nav__link {
     display: block;
-    
+
     font-size: 40px;
     line-height: 1.17;
     color: var(--secondary-text-color-teme-light);
     margin-bottom: 32px;
-    
+
     &:nth-child(3n) {
-            margin-bottom: 0;
-        }
-   &:hover, &:focus{
-    color: var(--accent-color);}    
+        margin-bottom: 0;
+    }
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.mobile-nav .mobile-nav__link.mobile-nav__link--current {
+    color: var(--accent-color);
 }

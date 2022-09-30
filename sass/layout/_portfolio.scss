@@ -64,7 +64,8 @@
         flex-wrap: wrap;
     }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px){
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
     .project__item {
         width: calc((100% - 30px) / 2);
         margin-right: 30px;
@@ -81,6 +82,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .filter {
+        margin-bottom: 50px;
+    }
+
     .project__item {
         width: calc((100% - 60px) / 3);
         margin-right: 30px;
